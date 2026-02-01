@@ -106,7 +106,7 @@ const Contact: React.FC = () => {
                     className="flex items-center gap-3 text-muted hover:text-accent transition-colors w-fit group"
                   >
                     <Github size={18} className="group-hover:scale-110 transition-transform" />
-                    <span>github.com/alexchen</span>
+                    <span>github.com/thomaszhang223</span>
                   </a>
                   <a 
                     href="https://www.linkedin.com/in/thomas-zhang-022a9b21b/" 
@@ -115,7 +115,7 @@ const Contact: React.FC = () => {
                     className="flex items-center gap-3 text-muted hover:text-accent transition-colors w-fit group"
                   >
                     <Linkedin size={18} className="group-hover:scale-110 transition-transform" />
-                    <span>linkedin.com/in/alexchen</span>
+                    <span>linkedin.com/in/thomaszhang</span>
                   </a>
                </div>
             </div>
