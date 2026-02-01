@@ -14,7 +14,6 @@ const About: React.FC = () => {
           {/* Left: Image */}
           <div className="w-full md:w-1/3 shrink-0">
               <div className="aspect-square rounded-lg overflow-hidden border-2 border-border relative">
-                <div className="absolute inset-0 bg-accent/10 z-10"></div>
                 <img 
                   src="/Portfolio-Website/assets/me.png" 
                   alt="Profile" 
