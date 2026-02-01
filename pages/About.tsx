@@ -13,14 +13,14 @@ const About: React.FC = () => {
         <div className="flex flex-col md:flex-row gap-8 items-center">
           {/* Left: Image */}
           <div className="w-full md:w-1/3 shrink-0">
-            <div className="aspect-square rounded-lg overflow-hidden border-2 border-border relative group">
-              <div className="absolute inset-0 bg-accent/10 group-hover:bg-transparent transition-colors z-10"></div>
-              <img 
-                src="./assets/profile.jpg" 
-                alt="Profile" 
-                className="w-full h-full object-cover grayscale group-hover:grayscale-0 transition-all duration-500"
-              />
-            </div>
+              <div className="aspect-square rounded-lg overflow-hidden border-2 border-border relative">
+                <div className="absolute inset-0 bg-accent/10 z-10"></div>
+                <img 
+                  src="./assets/me.png" 
+                  alt="Profile" 
+                  className="w-full h-full object-cover transition-all duration-500"
+                />
+              </div>
           </div>
 
           {/* Right: Content */}

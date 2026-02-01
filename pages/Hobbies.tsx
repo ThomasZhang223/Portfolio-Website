@@ -5,32 +5,41 @@ import { Hobby } from '../types';
 const hobbies: Hobby[] = [
   {
     id: 1,
-    title: "Cycling",
-    description: "Exploring the city and mountains on two wheels. I love long-distance endurance rides. Whether it's a quick morning sprint or a century ride on the weekend, the freedom of cycling clears my mind and keeps me physically challenged.",
+    title: "Music",
+    description: "Ever since I picked up my first pair of drumsticks at age six, I’ve been inseparable from my instruments. In its rhythms I find both calm and connection; music grounds me, eases my mind, and weaves people together across cultures and languages in a way few other forms of expression can. For the past decade of my life, I've been a percussionist in ensembles including the Toronto Youth Wind Orchestra, Toronto Symphony Youth Orchestra, and currently Orchestra@UWaterloo.",
     images: [
-      "./assets/hobby-cycling-1.jpg",
-      "./assets/hobby-cycling-2.jpg",
-      "./assets/hobby-cycling-3.jpg"
+      "./assets/music1.jpeg",
+      "./assets/music2.jpeg",
+      "./assets/music3.jpeg",
+      "./assets/music4.jpeg",
+      "./assets/music5.jpg",
+      "./assets/music6.jpeg",
+      "./assets/music7.jpeg",
     ]
   },
   {
     id: 2,
-    title: "Photography",
-    description: "Capturing moments from my travels. Special interest in urban and street photography. I enjoy finding the beauty in mundane city life and playing with light and shadow composition.",
+    title: "Stargazing",
+    description: "I've always been fascinated by the great beyond, and what lies in our endless dark cosmos. In clear nights I find solace in seeing the constellations, watching them return and recede with the seasons. With my telescope I can see far beyond what my eyesight grants me-the shifting phases of Venus, mountain ranges and craters on the Moon, storms and moons of Jupiter, and the rings and divisions of Saturn. In those quiet moments beneath the stars, time slows, and I feel peacefully anchored within the vastness of the universe.",
     images: [
-      "./assets/hobby-photo-1.jpg",
-      "./assets/hobby-photo-2.jpg",
-      "./assets/hobby-photo-3.jpg"
+      "./assets/star1.jpg",
+      "./assets/star2.jpg",
+      "./assets/star3.heic",
+      "./assets/star4.heic",
+      "./assets/star5.heic",
+      "./assets/star6.heic",
+      "./assets/star7.heic"
     ]
   },
   {
     id: 3,
-    title: "Mechanical Keyboards",
-    description: "Building custom keyboards. Soldering switches, lubricating stabilizers, and finding the perfect keycap set to match my desk setup. It's a satisfying blend of engineering and aesthetics.",
+    title: "Cycling",
+    description: "My escape from everything in the world. Hours on end with nothing but me, my bike, and the endless road ahead. Not only great for exercise, it importantly allows me to venture beyond my desk, explore new places, and have spontaneous adventures.",
     images: [
-      "./assets/hobby-kb-1.jpg",
-      "./assets/hobby-kb-2.jpg",
-      "./assets/hobby-kb-3.jpg"
+      "./assets/bike1.HEIC",
+      "./assets/bike2.HEIC",
+      "./assets/bike3.HEIC",
+      "./assets/bike4.HEIC"
     ]
   }
 ];
