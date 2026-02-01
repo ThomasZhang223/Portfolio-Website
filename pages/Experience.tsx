@@ -6,7 +6,7 @@ const experiences: Experience[] = [
   {
     id: 1,
     company: "Watonomous",
-    logo: "./assets/watonomous_logo.jpeg",
+    logo: "/Portfolio-Website/assets/watonomous_logo.jpeg",
     title: "Rover Autonomy Developer",
     period: "Jan. 2026 - Present",
     description: [
@@ -16,7 +16,7 @@ const experiences: Experience[] = [
   {
     id: 2,
     company: "Triple J Canada Consulting Inc.",
-    logo: "./assets/triple_j_canada_consulting_inc_logo.jpeg",
+    logo: "/Portfolio-Website/assets/triple_j_canada_consulting_inc_logo.jpeg",
     title: "Freelance Software Developer",
     period: "Jun. 2025 - Aug. 2025",
     description: [

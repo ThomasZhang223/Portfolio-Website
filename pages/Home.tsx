@@ -11,7 +11,7 @@ const GitHubCalendar = GitHubCalendarBase as any;
 const Home: React.FC = () => {
   return (
     <div className="animate-fade-in w-full">
-      <TerminalCard className="w-full">
+      <TerminalCard className="w-full mt-6 md:mt-10">
         <div className="flex flex-col gap-8">
           
           {/* Intro Section */}
@@ -22,7 +22,7 @@ const Home: React.FC = () => {
                 Thomas Zhang
               </h1>
               <h2 className="text-2xl md:text-3xl text-muted font-light">
-                Full-Stack Engineer
+                Software Engineer
               </h2>
             </div>
           </div>
@@ -32,7 +32,7 @@ const Home: React.FC = () => {
             <p className="text-accent font-medium text-lg">$ ls ./social-links</p>
             <div className="flex flex-wrap gap-4">
               <a 
-                href="./assets/General_resume.pdf" 
+                href="/Portfolio-Website/assets/General_resume.pdf" 
                 target="_blank"
                 className="flex items-center gap-2 px-6 py-3 bg-accent text-bg font-bold rounded hover:bg-green-400 transition-colors"
               >

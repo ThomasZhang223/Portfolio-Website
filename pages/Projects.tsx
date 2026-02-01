@@ -8,7 +8,7 @@ const projects: Project[] = [
     id: 1,
     title: "JobFlow",
     description: "A job search automation platform with web scraping capabilities that bypasses anti-bot protections using Scrapy and Selenium middleware. Features asynchronous task processing with Celery, real-time WebSocket updates, and JWT authentication serving 15+ active users.",
-    image: "./assets/jobflow.png",
+    image: "/Portfolio-Website/assets/jobflow.png",
     technologies: ["Next.js", "TypeScript", "FastAPI", "Celery", "Redis", "Scrapy", "Selenium", "PostgreSQL", "Supabase"],
     githubUrl: "https://github.com/ThomasZhang223/JobFlow",
     demoUrl: "https://jobflow-ten.vercel.app"
@@ -17,7 +17,7 @@ const projects: Project[] = [
     id: 2,
     title: "TradeStream",
     description: "A real-time market data platform that processes over 1 million tick updates daily, streaming live analytics through Kafka to deliver 50,000+ updates per second to dashboards. Combines TimescaleDB for persistent storage with Redis caching and a C++ analytics microservice achieving sub-100ms latency.",
-    image: "./assets/tradestream.png",
+    image: "/Portfolio-Website/assets/tradestream.png",
     technologies: ["C++", "Next.JS", "TypeScript", "FastAPI", "Kafka", "Redis", "TimescaleDB"],
     githubUrl: "https://github.com/seanzhanng/tradestream"
   },
@@ -25,7 +25,7 @@ const projects: Project[] = [
     id: 3,
     title: "Haunted Harbour",
     description: "A 2D side-scrolling platformer developed using Win32 GDI with double-buffered rendering and a custom physics engine featuring AABB collision detection. Includes parallax scrolling, finite state machine player controls, and object pooling for optimized projectile management.",
-    image: "./assets/haunted_harbour.png",
+    image: "/Portfolio-Website/assets/haunted_harbour.png",
     technologies: ["C++", "Win32 GDI"],
     githubUrl: "https://github.com/ThomasZhang223/HauntedHarbour"
   },
@@ -33,7 +33,7 @@ const projects: Project[] = [
     id: 4,
     title: "Maze Engine",
     description: "A comprehensive tile-based game engine built in C++ using SFML, featuring a hybrid ECS/OOP architecture for optimal performance. Includes a custom physics engine with AABB collision detection and a built-in tile map editor for level design.",
-    image: "./assets/maze.png",
+    image: "/Portfolio-Website/assets/maze.png",
     technologies: ["C++", "SFML"],
     githubUrl: "https://github.com/ThomasZhang223/Maze-game-engine"
   },
@@ -41,7 +41,7 @@ const projects: Project[] = [
     id: 5,
     title: "Handwritten digit classifier",
     description: "A deep learning application built with PyTorch that recognizes handwritten digits with 95% accuracy using a 4-layer neural network trained on the MNIST dataset. Features an interactive Pygame canvas for real-time digit prediction with OpenCV image processing.",
-    image: "./assets/digits.png",
+    image: "/Portfolio-Website/assets/digits.png",
     technologies: ["PyTorch", "OpenCV", "Numpy", "Python"],
     githubUrl: "https://github.com/ThomasZhang223/Digit-Recognition"
   },
@@ -49,7 +49,7 @@ const projects: Project[] = [
     id: 6,
     title: "Reseet",
     description: "A cross-platform mobile app for receipt scanning and budget tracking built with React Native and Flask. Uses OpenCV and pytesseract for OCR text extraction, integrated with Google Gemini API for expense categorization and personalized financial advice.",
-    image: "./assets/reseet.png",
+    image: "/Portfolio-Website/assets/reseet.png",
     technologies: ["React Native", "Expo", "Flask", "PostgreSQL", "OpenCV", "Gemini API"],
     githubUrl: "https://github.com/ThomasZhang223/newhacks25",
     demoUrl: "https://devpost.com/software/reseet-owrm98"

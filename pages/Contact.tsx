@@ -92,7 +92,7 @@ const Contact: React.FC = () => {
                <p className="text-accent font-medium text-sm">$ ls ./socials</p>
                <div className="flex flex-col gap-4">
                   <a 
-                    href="./assets/General_resume.pdf" 
+                    href="/Portfolio-Website/assets/General_resume.pdf" 
                     target="_blank"
                     className="flex items-center gap-3 text-muted hover:text-accent transition-colors w-fit group"
                   >

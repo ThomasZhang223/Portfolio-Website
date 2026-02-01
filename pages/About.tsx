@@ -16,7 +16,7 @@ const About: React.FC = () => {
               <div className="aspect-square rounded-lg overflow-hidden border-2 border-border relative">
                 <div className="absolute inset-0 bg-accent/10 z-10"></div>
                 <img 
-                  src="./assets/me.png" 
+                  src="/Portfolio-Website/assets/me.png" 
                   alt="Profile" 
                   className="w-full h-full object-cover transition-all duration-500"
                 />
