@@ -8,13 +8,13 @@ const hobbies: Hobby[] = [
     title: "Music",
     description: "Ever since I picked up my first pair of drumsticks at age six, I’ve been inseparable from my instruments. In its rhythms I find both calm and connection; music grounds me, eases my mind, and weaves people together across cultures and languages in a way few other forms of expression can. For the past decade of my life, I've been a percussionist in ensembles including the Toronto Youth Wind Orchestra, Toronto Symphony Youth Orchestra, and currently Orchestra@UWaterloo.",
     images: [
-      "/Portfolio-Website/assets/music1.jpeg",
-      "/Portfolio-Website/assets/music2.jpeg",
-      "/Portfolio-Website/assets/music3.jpeg",
-      "/Portfolio-Website/assets/music4.jpeg",
-      "/Portfolio-Website/assets/music5.jpg",
-      "/Portfolio-Website/assets/music6.jpeg",
-      "/Portfolio-Website/assets/music7.jpeg",
+      "/Portfolio-Website/assets/music1.JPEG",
+      "/Portfolio-Website/assets/music2.JPEG",
+      "/Portfolio-Website/assets/music3.JPEG",
+      "/Portfolio-Website/assets/music4.JPEG",
+      "/Portfolio-Website/assets/music5.JPG",
+      "/Portfolio-Website/assets/music6.JPEG",
+      "/Portfolio-Website/assets/music7.JPEG",
     ]
   },
   {
@@ -23,11 +23,11 @@ const hobbies: Hobby[] = [
     description: "I've always been fascinated by the great beyond, and what lies in our endless dark cosmos. In clear nights I find solace in seeing the constellations, watching them return and recede with the seasons. With my telescope I can see far beyond what my eyesight grants me-the shifting phases of Venus, mountain ranges and craters on the Moon, storms and moons of Jupiter, and the rings and divisions of Saturn. In those quiet moments beneath the stars, time slows, and I feel peacefully anchored within the vastness of the universe.",
     images: [
       "/Portfolio-Website/assets/star1.jpg",
-      "/Portfolio-Website/assets/star2.jpg",
-      "/Portfolio-Website/assets/star3.heic",
+      "/Portfolio-Website/assets/star2.JPG",
+      "/Portfolio-Website/assets/star3.HEIC",
       "/Portfolio-Website/assets/star4.heic",
-      "/Portfolio-Website/assets/star5.heic",
-      "/Portfolio-Website/assets/star6.heic",
+      "/Portfolio-Website/assets/star5.HEIC",
+      "/Portfolio-Website/assets/star6.HEIC",
       "/Portfolio-Website/assets/star7.heic"
     ]
   },
@@ -37,7 +37,7 @@ const hobbies: Hobby[] = [
     description: "My escape from everything in the world. Hours on end with nothing but me, my bike, and the endless road ahead. Not only great for exercise, it importantly allows me to venture beyond my desk, explore new places, and have spontaneous adventures.",
     images: [
       "/Portfolio-Website/assets/bike1.HEIC",
-      "/Portfolio-Website/assets/bike2.HEIC",
+      "/Portfolio-Website/assets/bike2.heic",
       "/Portfolio-Website/assets/bike3.HEIC",
       "/Portfolio-Website/assets/bike4.HEIC"
     ]
