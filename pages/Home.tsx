@@ -62,7 +62,7 @@ const Home: React.FC = () => {
 
           {/* GitHub Calendar Section */}
           <div className="pt-6 border-t border-border/50">
-            <p className="text-accent font-medium text-lg mb-4">$ gh cal -y 2024</p>
+            <p className="text-accent font-medium text-lg mb-4">$ gh cal -y {new Date().getFullYear()}</p>
             {/* Added container query style wrapper to ensure it doesn't overflow */}
             <div className="w-full overflow-hidden flex justify-start md:justify-center overflow-x-auto pb-2">
               <div className="min-w-fit">
