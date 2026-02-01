@@ -22,17 +22,9 @@ const Contact: React.FC = () => {
     setStatus('sending');
 
     // EmailJS Configuration from environment variables
-    // Safely access env variables with fallback to empty object
-    const env = (import.meta as any).env || {};
-    const serviceID = env.VITE_EMAILJS_SERVICE_ID;
-    const templateID = env.VITE_EMAILJS_TEMPLATE_ID;
-    const publicKey = env.VITE_EMAILJS_PUBLIC_KEY;
-
-    if (!serviceID || !templateID || !publicKey) {
-      console.error('EmailJS credentials missing');
-      setStatus('error');
-      return;
-    }
+    const serviceID = "service_byvqshg";
+    const templateID = "template_o16mk1n";
+    const publicKey = "JZDsXSvxWmXNSKkyH";
 
     const templateParams = {
       from_name: formData.name,
