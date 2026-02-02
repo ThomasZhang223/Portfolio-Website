@@ -63,35 +63,37 @@ const Home: React.FC = () => {
           {/* GitHub Calendar Section */}
           <div className="pt-6 border-t border-border/50">
             <p className="text-accent font-medium text-lg mb-4">$ gh cal -y {new Date().getFullYear()}</p>
-            {/* Added container query style wrapper to ensure it doesn't overflow */}
-            <div className="w-full overflow-hidden flex justify-start md:justify-center overflow-x-auto pb-2">
-              <div className="min-w-fit">
-                <GitHubCalendar 
-                  username="thomaszhang223" 
-                  blockSize={10} 
-                  blockMargin={4}
-                  fontSize={12}
+            <div className="w-full flex justify-center pb-2">
+              <div
+                className="w-[1150px] max-w-full mx-auto px-8 py-2"
+                style={{ background: 'none' }}
+              >
+                <GitHubCalendar
+                  username="thomaszhang223"
+                  blockSize={13}
+                  blockMargin={3}
+                  fontSize={14}
                   theme={{
                     light: ['#0f172a', '#0e4429', '#006d32', '#26a641', '#39d353'],
                     dark: ['#0f172a', '#0e4429', '#006d32', '#26a641', '#39d353'],
                   }}
-                  style={{ color: '#e2e8f0' }}
-                  renderBlock={(block: any, activity: any) => (
+                  style={{ color: '#e2e8f0', width: '100%' }}
+                  renderBlock={(block: any, activity: any) =>
                     React.cloneElement(block, {
                       'data-tooltip-id': 'github-tooltip',
                       'data-tooltip-content': `${activity.count} contributions on ${activity.date}`,
                     })
-                  )}
+                  }
                 />
-                <Tooltip 
-                  id="github-tooltip" 
-                  style={{ 
-                    backgroundColor: '#1e293b', 
-                    color: '#e2e8f0', 
+                <Tooltip
+                  id="github-tooltip"
+                  style={{
+                    backgroundColor: '#1e293b',
+                    color: '#e2e8f0',
                     borderRadius: '4px',
-                    fontSize: '12px',
-                    padding: '8px 12px'
-                  }} 
+                    fontSize: '14px',
+                    padding: '10px 16px',
+                  }}
                 />
               </div>
             </div>
