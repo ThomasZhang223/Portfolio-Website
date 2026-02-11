@@ -24,11 +24,11 @@ const hobbies: Hobby[] = [
     images: [
       "/Portfolio-Website/assets/star1.jpg",
       "/Portfolio-Website/assets/star2.JPG",
-      "/Portfolio-Website/assets/star3.HEIC",
-      "/Portfolio-Website/assets/star4.heic",
-      "/Portfolio-Website/assets/star5.HEIC",
-      "/Portfolio-Website/assets/star6.HEIC",
-      "/Portfolio-Website/assets/star7.heic"
+      "/Portfolio-Website/assets/star3.jpg",
+      "/Portfolio-Website/assets/star4.jpg",
+      "/Portfolio-Website/assets/star5.jpg",
+      "/Portfolio-Website/assets/star6.jpg",
+      "/Portfolio-Website/assets/star7.jpg"
     ]
   },
   {
@@ -36,10 +36,10 @@ const hobbies: Hobby[] = [
     title: "Cycling",
     description: "My escape from everything in the world. Hours on end with nothing but me, my bike, and the endless road ahead. Not only great for exercise, it importantly allows me to venture beyond my desk, explore new places, and have spontaneous adventures.",
     images: [
-      "/Portfolio-Website/assets/bike1.HEIC",
-      "/Portfolio-Website/assets/bike2.heic",
-      "/Portfolio-Website/assets/bike3.HEIC",
-      "/Portfolio-Website/assets/bike4.HEIC"
+      "/Portfolio-Website/assets/bike1.jpg",
+      "/Portfolio-Website/assets/bike2.jpg",
+      "/Portfolio-Website/assets/bike3.jpg",
+      "/Portfolio-Website/assets/bike4.jpg"
     ]
   }
 ];
