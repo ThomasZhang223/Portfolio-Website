@@ -10,7 +10,8 @@ const experiences: Experience[] = [
     title: "Rover Autonomy Developer",
     period: "Jan. 2026 - Present",
     description: [
-      "Developing navigation costmap and object detection for a Mars Rover’s autonomy subsystem.",
+      "Engineering autonomous rover navigation for a student Mars Rover with A* pathfinding and costmap integration, reducing path computation time by 40%",
+      "Fine-tuning YOLOv8 object detection using ONNX Runtime with real-time inference for obstacle classification"
     ]
   },
   {
@@ -20,10 +21,10 @@ const experiences: Experience[] = [
     title: "Freelance Software Developer",
     period: "Jun. 2025 - Aug. 2025",
     description: [
-      "Built client-side and admin-side tax filing platform used by 2000+ clients with Python Flask.",
-      "Developed REST API with POST/GET endpoints on SQLite database with SQLAlchemy.",
-      "Created user sessions and authentication with cookies and automated email verification with Flask Mail.",
-      "Collaborated with a team using GitHub and Obsidian for project management."
+      "Engineered a multi-repo full-stack tax filing platform serving 2,000+ clients and 5,000+ tax returns",
+      "Delivered production Flask backend to streamline client data collection, reducing staff preparation work by >30%",
+      "Owned database migrations for a live SQLite database, transforming existing data with zero loss or downtime",
+      "Automated user verification and admin access control, eliminating 20+ hrs/week of manual onboarding"
     ]
   }
 ];
