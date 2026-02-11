@@ -82,8 +82,8 @@ const HobbiesPage: React.FC = () => {
                     ))}
                  </div>
                  {/* Scroll hint overlay */}
-                 <div className="absolute bottom-4 left-1/2 -translate-x-1/2 text-white/50 text-xs pointer-events-none md:hidden">
-                    Swipe for more &rarr;
+                 <div className="absolute bottom-4 left-1/2 -translate-x-1/2 text-white/60 text-xs pointer-events-none tracking-wide bg-black/40 px-3 py-1 rounded-full">
+                    scroll to see more
                  </div>
               </div>
 

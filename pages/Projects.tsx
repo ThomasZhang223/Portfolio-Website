@@ -1,6 +1,6 @@
-import React from 'react';
+import React, { useState } from 'react';
 import TerminalCard from '../components/TerminalCard';
-import { Github, Globe } from 'lucide-react';
+import { Github, Globe, ChevronDown, ChevronUp } from 'lucide-react';
 import { Project } from '../types';
 
 const projects: Project[] = [
@@ -19,10 +19,26 @@ const projects: Project[] = [
     description: "A real-time market data platform that processes over 1 million tick updates daily, streaming live analytics through Kafka to deliver 50,000+ updates per second to dashboards. Combines TimescaleDB for persistent storage with Redis caching and a C++ analytics microservice achieving sub-100ms latency.",
     image: "/Portfolio-Website/assets/tradestream.png",
     technologies: ["C++", "Next.JS", "TypeScript", "FastAPI", "Kafka", "Redis", "TimescaleDB"],
-    githubUrl: "https://github.com/seanzhanng/tradestream"
+    githubUrl: "https://github.com/ThomasZhang223/tradestream"
   },
   {
     id: 3,
+    title: "Karaoke Generator",
+    description: "A web application that automatically converts YouTube songs into karaoke videos with instrumental tracks and synchronized lyrics. Features AI vocal removal and optimized video rendering for fast, high-quality karaoke creation.",
+    image: "/Portfolio-Website/assets/karaoke.png",
+    technologies: ["FastAPI", "React.js", "Demucs", "FFmpeg", "yt-dlp", "LRClib"],
+    githubUrl: "https://github.com/ThomasZhang223/karaoke_generator",
+  },
+  {
+    id: 4,
+    title: "Study Planner",
+    description: "An AI study assistant that generates personalized study plans and guides from course textbooks and syllabi. Uses multi-agent architecture to create tailored learning schedules and comprehensive study materials based on curriculum content.",
+    image: "/Portfolio-Website/assets/study.png",
+    technologies: ["Python", "Google ADK", "Pinecone", "Gemini API", "Pydantic", "PyMuPDF"],
+    githubUrl: "https://github.com/ThomasZhang223/b-x--takehome"
+  },
+  {
+    id:5,
     title: "Haunted Harbour",
     description: "A 2D side-scrolling platformer developed using Win32 GDI with double-buffered rendering and a custom physics engine featuring AABB collision detection. Includes parallax scrolling, finite state machine player controls, and object pooling for optimized projectile management.",
     image: "/Portfolio-Website/assets/haunted_harbour.png",
@@ -30,7 +46,7 @@ const projects: Project[] = [
     githubUrl: "https://github.com/ThomasZhang223/HauntedHarbour"
   },
   {
-    id: 4,
+    id: 6,
     title: "Maze Engine",
     description: "A comprehensive tile-based game engine built in C++ using SFML, featuring a hybrid ECS/OOP architecture for optimal performance. Includes a custom physics engine with AABB collision detection and a built-in tile map editor for level design.",
     image: "/Portfolio-Website/assets/maze.png",
@@ -38,7 +54,7 @@ const projects: Project[] = [
     githubUrl: "https://github.com/ThomasZhang223/Maze-game-engine"
   },
   {
-    id: 5,
+    id: 7,
     title: "Handwritten digit classifier",
     description: "A deep learning application built with PyTorch that recognizes handwritten digits with 95% accuracy using a 4-layer neural network trained on the MNIST dataset. Features an interactive Pygame canvas for real-time digit prediction with OpenCV image processing.",
     image: "/Portfolio-Website/assets/digits.png",
@@ -46,7 +62,7 @@ const projects: Project[] = [
     githubUrl: "https://github.com/ThomasZhang223/Digit-Recognition"
   },
   {
-    id: 6,
+    id: 8,
     title: "Reseet",
     description: "A cross-platform mobile app for receipt scanning and budget tracking built with React Native and Flask. Uses OpenCV and pytesseract for OCR text extraction, integrated with Google Gemini API for expense categorization and personalized financial advice.",
     image: "/Portfolio-Website/assets/reseet.png",
@@ -57,6 +73,9 @@ const projects: Project[] = [
 ];
 
 const Projects: React.FC = () => {
+  const [showAll, setShowAll] = useState(false);
+  const visibleProjects = showAll ? projects : projects.filter(p => p.id <= 4);
+
   return (
     <div className="space-y-8 animate-fade-in">
       <div className="text-center space-y-2 mb-12">
@@ -65,7 +84,7 @@ const Projects: React.FC = () => {
       </div>
 
       <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
-        {projects.map((project) => (
+        {visibleProjects.map((project) => (
           <TerminalCard key={project.id} className="h-[620px] flex flex-col group relative">
              {/* Image */}
              <div className="aspect-video w-full overflow-hidden rounded-md mb-4 border border-border bg-black/50">
@@ -111,6 +130,27 @@ const Projects: React.FC = () => {
           </TerminalCard>
         ))}
       </div>
+
+      {projects.length > 4 && (
+        <div className="flex justify-center mt-8">
+          <button
+            onClick={() => setShowAll(!showAll)}
+            className="flex items-center gap-2 px-6 py-3 rounded-lg border border-accent/30 bg-accent/5 text-accent hover:bg-accent/10 hover:border-accent/50 transition-all duration-300"
+          >
+            {showAll ? (
+              <>
+                <ChevronUp size={20} />
+                <span>Show Less</span>
+              </>
+            ) : (
+              <>
+                <ChevronDown size={20} />
+                <span>See More ({projects.length - 4} more projects)</span>
+              </>
+            )}
+          </button>
+        </div>
+      )}
     </div>
   );
 };
