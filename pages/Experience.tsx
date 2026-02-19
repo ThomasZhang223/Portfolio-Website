@@ -10,8 +10,9 @@ const experiences: Experience[] = [
     title: "Rover Autonomy Developer",
     period: "Jan. 2026 - Present",
     description: [
-      "Engineering autonomous rover navigation for a student Mars Rover with A* pathfinding and costmap integration, reducing path computation time by 40%",
-      "Fine-tuning YOLOv8 object detection using ONNX Runtime with real-time inference for obstacle classification"
+      "Engineering autonomous rover navigation for a student Mars Rover with A* pathfinding on 60×60 occupancy grids with 8-directional search and cost-weighted heuristics",
+      "Fine-tuning YOLOv8 object detection using ONNX Runtime with real-time inference for obstacle classification",
+      "Built obstacle costmap from depth camera point clouds using height-slice filtering and downsampling"
     ]
   },
   {
