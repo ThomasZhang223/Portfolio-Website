@@ -6,6 +6,7 @@ export interface Project {
   technologies: string[];
   githubUrl: string;
   demoUrl?: string;
+  devpostUrl?: string;
 }
 
 export interface Experience {
