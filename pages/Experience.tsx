@@ -5,6 +5,20 @@ import { Experience } from '../types';
 const experiences: Experience[] = [
   {
     id: 1,
+    company: "Stealth Startup",
+    logo: "/Portfolio-Website/assets/stealth_startup_logo.jpeg",
+    title: "Agent Infrastructure Engineer",
+    period: "Jun. 2026 - Present",
+    description: [
+      "Built an autonomous agent harness that ships engineering tickets as tested, mergeable PRs, unattended",
+      "Cut per-issue cost 6x ($10+ to <$3) by A/B testing turn count reduction and per-turn context trimming",
+      "Autonomously resolved 40+ tickets at a 90%+ success rate across two codebases, saving 10+ eng hrs/week",
+      "Gated every change on unit, integration, and e2e tests against a Docker Compose replica of production, inside a custom sandbox that blocks unsafe or destructive changes",
+      "Deployed on AWS EC2 behind an ALB with a snapshotted EBS volume and OIDC-authenticated deploys"
+    ]
+  },
+  {
+    id: 2,
     company: "Watonomous",
     logo: "/Portfolio-Website/assets/watonomous_logo.jpeg",
     title: "Rover Autonomy Developer",
@@ -16,7 +30,7 @@ const experiences: Experience[] = [
     ]
   },
   {
-    id: 2,
+    id: 3,
     company: "Triple J Canada Consulting Inc.",
     logo: "/Portfolio-Website/assets/triple_j_canada_consulting_inc_logo.jpeg",
     title: "Freelance Software Developer",
