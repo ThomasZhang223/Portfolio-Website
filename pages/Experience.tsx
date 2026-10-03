@@ -7,14 +7,15 @@ const experiences: Experience[] = [
     id: 1,
     company: "Stealth Startup",
     logo: "/Portfolio-Website/assets/stealth_startup_logo.jpeg",
-    title: "Agent Infrastructure Engineer",
-    period: "Jun. 2026 - Present",
+    title: "Software Engineer Intern",
+    period: "Jun. 2026 - Sep. 2026",
     description: [
-      "Built an autonomous agent harness that ships engineering tickets as tested, mergeable PRs, unattended",
-      "Cut per-issue cost 6x ($10+ to <$3) by A/B testing turn count reduction and per-turn context trimming",
-      "Autonomously resolved 40+ tickets at a 90%+ success rate across two codebases, saving 10+ eng hrs/week",
-      "Gated every change on unit, integration, and e2e tests against a Docker Compose replica of production, inside a custom sandbox that blocks unsafe or destructive changes",
-      "Deployed on AWS EC2 behind an ALB with a snapshotted EBS volume and OIDC-authenticated deploys"
+      "Built a sandboxed autonomous agent harness that lets engineers and non-engineers ship by filing a ticket, returning green PRs gated by unit, UI, integration, and e2e testing on a Docker Compose replica of the company stack",
+      "Autonomously resolved 40+ tickets at a 90%+ success rate while cutting cost 6x per issue (<$3), saving 10+ eng hrs/week",
+      "Recycled a 21-container AWS EC2 stack nightly, self-monitored via systemd, CloudWatch, and Datadog",
+      "Added a self-healing loop on a durable SQLite queue that repairs failed CI builds and recovers dropped requests",
+      "Authored Terraform to register the service on the company's shared AWS via ECS and a webhook relay",
+      "Solely owned the service end to end across 5 codebases, scoping requirements with engineers and stakeholders"
     ]
   },
   {

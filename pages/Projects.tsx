@@ -6,6 +6,14 @@ import { Project } from '../types';
 const projects: Project[] = [
   {
     id: 1,
+    title: "Scale",
+    description: "A Hack the North 2026 app that scans a real room and objects with an iPhone, then uses an AI agent to search for furniture, check fit, and propose placements. OR-Tools computes the placement so nothing overlaps, and the result is live in a VR headset. The backend runs on Cloudflare Workers and Durable Objects and reaches a Docker solver through secure tunnels, with 3D models embedded as vectors in Vectorize via Browser Rendering, glb files in R2, and metadata in D1. Native Swift scanning with ARKit in an Expo app reconstructs 3D meshes at scale with LiDAR.",
+    image: "/Portfolio-Website/assets/scale.png",
+    technologies: ["TypeScript", "Cloudflare", "Swift", "Expo", "React Native", "Python", "OR-Tools"],
+    githubUrl: "https://github.com/ThomasZhang223/Scale"
+  },
+  {
+    id: 2,
     title: "Yapdraw",
     description: "A GenAI Genesis 2026 finalist voice tool that turns spoken system architecture into editable Excalidraw diagrams in real time. Fires one OpenAI call per spoken sentence over a Deepgram WebSocket to keep perceived response time under 1s, so diagrams grow live as you speak. Includes a safety layer that detects and restores nodes the LLM drops between voice edits, keeping diagrams stable across long sessions.",
     image: "/Portfolio-Website/assets/yapdraw.png",
@@ -15,7 +23,7 @@ const projects: Project[] = [
     devpostUrl: "https://devpost.com/software/yapdraw"
   },
   {
-    id: 2,
+    id: 3,
     title: "JobFlow",
     description: "A job search automation platform with web scraping capabilities that bypasses anti-bot protections using Scrapy and Selenium middleware. Features asynchronous task processing with Celery, real-time WebSocket updates, and JWT authentication serving 15+ active users.",
     image: "/Portfolio-Website/assets/jobflow.png",
@@ -24,7 +32,7 @@ const projects: Project[] = [
     demoUrl: "https://jobflow-ten.vercel.app"
   },
   {
-    id: 3,
+    id: 4,
     title: "TradeStream",
     description: "A real-time market data platform that processes over 1 million tick updates daily, streaming live analytics through Kafka to deliver 50,000+ updates per second to dashboards. Combines TimescaleDB for persistent storage with Redis caching and a C++ analytics microservice achieving sub-100ms latency.",
     image: "/Portfolio-Website/assets/tradestream.png",
@@ -32,7 +40,7 @@ const projects: Project[] = [
     githubUrl: "https://github.com/ThomasZhang223/tradestream"
   },
   {
-    id: 4,
+    id: 5,
     title: "Karaoke Generator",
     description: "A web application that automatically converts YouTube songs into karaoke videos with instrumental tracks and synchronized lyrics. Features AI vocal removal and optimized video rendering for fast, high-quality karaoke creation.",
     image: "/Portfolio-Website/assets/karaoke.png",
@@ -40,7 +48,7 @@ const projects: Project[] = [
     githubUrl: "https://github.com/ThomasZhang223/karaoke_generator",
   },
   {
-    id: 5,
+    id: 6,
     title: "Study Planner",
     description: "An AI study assistant that generates personalized study plans and guides from course textbooks and syllabi. Uses multi-agent architecture to create tailored learning schedules and comprehensive study materials based on curriculum content.",
     image: "/Portfolio-Website/assets/study.png",
@@ -48,7 +56,7 @@ const projects: Project[] = [
     githubUrl: "https://github.com/ThomasZhang223/b-x--takehome"
   },
   {
-    id: 6,
+    id: 7,
     title: "Haunted Harbour",
     description: "A 2D side-scrolling platformer developed using Win32 GDI with double-buffered rendering and a custom physics engine featuring AABB collision detection. Includes parallax scrolling, finite state machine player controls, and object pooling for optimized projectile management.",
     image: "/Portfolio-Website/assets/haunted_harbour.png",
@@ -56,7 +64,7 @@ const projects: Project[] = [
     githubUrl: "https://github.com/ThomasZhang223/HauntedHarbour"
   },
   {
-    id: 7,
+    id: 8,
     title: "Maze Engine",
     description: "A comprehensive tile-based game engine built in C++ using SFML, featuring a hybrid ECS/OOP architecture for optimal performance. Includes a custom physics engine with AABB collision detection and a built-in tile map editor for level design.",
     image: "/Portfolio-Website/assets/maze.png",
@@ -64,7 +72,7 @@ const projects: Project[] = [
     githubUrl: "https://github.com/ThomasZhang223/Maze-game-engine"
   },
   {
-    id: 8,
+    id: 9,
     title: "Handwritten digit classifier",
     description: "A deep learning application built with PyTorch that recognizes handwritten digits with 95% accuracy using a 4-layer neural network trained on the MNIST dataset. Features an interactive Pygame canvas for real-time digit prediction with OpenCV image processing.",
     image: "/Portfolio-Website/assets/digits.png",
@@ -72,7 +80,7 @@ const projects: Project[] = [
     githubUrl: "https://github.com/ThomasZhang223/Digit-Recognition"
   },
   {
-    id: 9,
+    id: 10,
     title: "Reseet",
     description: "A cross-platform mobile app for receipt scanning and budget tracking built with React Native and Flask. Uses OpenCV and pytesseract for OCR text extraction, integrated with Google Gemini API for expense categorization and personalized financial advice.",
     image: "/Portfolio-Website/assets/reseet.png",
