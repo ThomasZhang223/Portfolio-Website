@@ -7,15 +7,16 @@ const projects: Project[] = [
   {
     id: 1,
     title: "Scale",
-    description: "A Hack the North 2026 app that scans a real room and objects with an iPhone, then uses an AI agent to search for furniture, check fit, and propose placements. OR-Tools computes the placement so nothing overlaps, and the result is live in a VR headset. The backend runs on Cloudflare Workers and Durable Objects and reaches a Docker solver through secure tunnels, with 3D models embedded as vectors in Vectorize via Browser Rendering, glb files in R2, and metadata in D1. Native Swift scanning with ARKit in an Expo app reconstructs 3D meshes at scale with LiDAR.",
+    description: "A Hack the North 2026 app that scans a room with an iPhone, then uses an AI agent to find furniture, check fit, and place it with OR-Tools so nothing overlaps, live in a VR headset. Runs on Cloudflare Workers, with native Swift ARKit and LiDAR scanning in an Expo app.",
     image: "/Portfolio-Website/assets/scale.png",
     technologies: ["TypeScript", "Cloudflare", "Swift", "Expo", "React Native", "Python", "OR-Tools"],
-    githubUrl: "https://github.com/ThomasZhang223/Scale"
+    githubUrl: "https://github.com/ThomasZhang223/Scale",
+    devpostUrl: "https://devpost.com/software/room-scanner-thing"
   },
   {
     id: 2,
     title: "Yapdraw",
-    description: "A GenAI Genesis 2026 finalist voice tool that turns spoken system architecture into editable Excalidraw diagrams in real time. Fires one OpenAI call per spoken sentence over a Deepgram WebSocket to keep perceived response time under 1s, so diagrams grow live as you speak. Includes a safety layer that detects and restores nodes the LLM drops between voice edits, keeping diagrams stable across long sessions.",
+    description: "A GenAI Genesis 2026 finalist voice tool that turns spoken system architecture into editable Excalidraw diagrams in real time. Fires one OpenAI call per sentence over a Deepgram WebSocket for sub-1s response, with a safety layer that restores nodes the LLM drops.",
     image: "/Portfolio-Website/assets/yapdraw.png",
     technologies: ["Next.js", "Excalidraw", "Deepgram", "OpenAI API", "IndexedDB"],
     githubUrl: "https://github.com/rickytang666/yapdraw",

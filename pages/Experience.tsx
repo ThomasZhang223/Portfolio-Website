@@ -10,12 +10,9 @@ const experiences: Experience[] = [
     title: "Software Engineer Intern",
     period: "Jun. 2026 - Sep. 2026",
     description: [
-      "Built a sandboxed autonomous agent harness that lets engineers and non-engineers ship by filing a ticket, returning green PRs gated by unit, UI, integration, and e2e testing on a Docker Compose replica of the company stack",
-      "Autonomously resolved 40+ tickets at a 90%+ success rate while cutting cost 6x per issue (<$3), saving 10+ eng hrs/week",
-      "Recycled a 21-container AWS EC2 stack nightly, self-monitored via systemd, CloudWatch, and Datadog",
-      "Added a self-healing loop on a durable SQLite queue that repairs failed CI builds and recovers dropped requests",
-      "Authored Terraform to register the service on the company's shared AWS via ECS and a webhook relay",
-      "Solely owned the service end to end across 5 codebases, scoping requirements with engineers and stakeholders"
+      "Built an autonomous agent that turns a filed ticket into a tested, mergeable PR, so engineers and non-engineers can ship without writing the code themselves",
+      "Resolved 40+ tickets at a 90%+ success rate while cutting the cost per issue 6x, saving the team 10+ hours a week",
+      "Owned the service end to end, from AWS infrastructure and Terraform to a self-healing CI loop, across 5 codebases"
     ]
   },
   {
@@ -25,9 +22,9 @@ const experiences: Experience[] = [
     title: "Rover Autonomy Developer",
     period: "Jan. 2026 - Present",
     description: [
-      "Engineering autonomous rover navigation for a student Mars Rover with A* pathfinding on 60×60 occupancy grids with 8-directional search and cost-weighted heuristics",
-      "Fine-tuning YOLOv8 object detection using ONNX Runtime with real-time inference for obstacle classification",
-      "Built obstacle costmap from depth camera point clouds using height-slice filtering and downsampling"
+      "Work on autonomous navigation for a student Mars rover, using A* pathfinding on occupancy grids",
+      "Cut the obstacle costmap input about 20x by downsampling depth camera point clouds, keeping obstacle avoidance real time",
+      "Integrated YOLOv8 object detection through ONNX Runtime to classify obstacles from simulated camera feeds"
     ]
   },
   {
@@ -37,10 +34,9 @@ const experiences: Experience[] = [
     title: "Freelance Software Developer",
     period: "Jun. 2025 - Aug. 2025",
     description: [
-      "Engineered a multi-repo full-stack tax filing platform serving 2,000+ clients and 5,000+ tax returns",
-      "Delivered production Flask backend to streamline client data collection, reducing staff preparation work by >30%",
-      "Owned database migrations for a live SQLite database, transforming existing data with zero loss or downtime",
-      "Automated user verification and admin access control, eliminating 20+ hrs/week of manual onboarding"
+      "Built a full-stack tax platform serving 2,000+ clients and 5,000+ returns, replacing paper intake and office visits with online forms",
+      "Delivered the Flask backend that cut staff prep work by over 30% and automated client verification and admin access, saving 20+ hours a week",
+      "Ran live SQLite migrations with Alembic, with zero data loss or downtime"
     ]
   }
 ];
