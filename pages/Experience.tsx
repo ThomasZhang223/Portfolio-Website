@@ -10,9 +10,9 @@ const experiences: Experience[] = [
     title: "Software Engineer Intern",
     period: "Jun. 2026 - Sep. 2026",
     description: [
-      "Built an autonomous agent that turns a filed ticket into a tested, mergeable PR, so engineers and non-engineers can ship without writing the code themselves",
-      "Resolved 40+ tickets at a 90%+ success rate while cutting the cost per issue 6x, saving the team 10+ hours a week",
-      "Owned the service end to end, from AWS infrastructure and Terraform to a self-healing CI loop, across 5 codebases"
+      "Built an autonomous agent that turns a filed ticket into a tested, mergeable PR, running a headless Claude agent in a real checkout against a live replica of the production stack",
+      "Designed the pipeline to fail closed: tests report pass, fail, or unverified, so a broken toolchain is never read as a green result, and an ambiguous request is stopped instead of guessed",
+      "Cut the cost per issue 6x by measuring real runs and A/B testing turn limits and context trimming, while resolving 40+ tickets at a 90%+ success rate"
     ]
   },
   {
